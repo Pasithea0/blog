@@ -9,7 +9,7 @@ permalink: /
 
 
 
-<strong>Recently updated notes</strong>
+<strong>Recently updated pages</strong>
 
 <ul>
   {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}

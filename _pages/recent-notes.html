@@ -1,0 +1,18 @@
+---
+layout: null
+title: Recently
+id: recently
+permalink: /recently
+---
+<link rel="stylesheet" type="text/css" href="https://envious.pro/css/styles.css">
+
+<strong>Recently updated from <a class="list-link" href="https://blog.envious.pro" target="_blank">blog</a></strong>
+
+<ul>
+  {% assign recent_notes = site.notes | sort: "last_modified_at_timestamp" | reverse %}
+  {% for note in recent_notes limit: 3 %}
+    <li>
+      {{ note.last_modified_at | date: "%Y-%m-%d" }} — <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}" target="_blank">{{ note.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
