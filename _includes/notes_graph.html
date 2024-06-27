@@ -6,20 +6,19 @@
 
   .nodes circle {
     cursor: pointer;
-    fill: #8b88e6;
+    fill: rgba(139, 136, 230, 0.8);
     transition: all 0.15s ease-out;
   }
 
   .text text {
     cursor: pointer;
-    fill: #333;
-    text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+    fill: #ffffff;
   }
 
   .nodes [active],
   .text [active] {
     cursor: pointer;
-    fill: black;
+    fill: rgba(139, 136, 230, 1);
   }
 
   .inactive {
@@ -28,7 +27,7 @@
   }
 
   #graph-wrapper {
-    background: #fcfcfc;
+    background: rgb(27, 27, 27);
     border-radius: 4px;
     height: auto;
   }

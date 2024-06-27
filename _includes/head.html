@@ -38,6 +38,9 @@
   <meta property="og:image" content="{{ site.url }}{{ page.image }}">
   {% endif %}
 
+  <!-- prevent darkreader extension from messing with our already dark site -->
+  <meta name="darkreader-lock" />
+
   <title>
     {% if page.id == "home" %}
       {{ site.title }}
