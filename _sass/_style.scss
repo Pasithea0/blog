@@ -66,6 +66,7 @@ hr {
   height: 1px;
   margin: 1.5em 0;
   background: $color-border;
+  opacity: 0.2;
 }
 
 h1,
@@ -147,4 +148,19 @@ code {
 .invalid-link-brackets {
   color: #260303;
   cursor: help;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* Align items with space in between */
+  align-items: center; /* Center align vertically */
+}
+
+.blog-title {
+  flex: 1; /* Take up remaining space */
+}
+
+.back-link {
+  margin-left: 20px; /* Add some space between the two links */
+  font-size: 0.7em;
 }

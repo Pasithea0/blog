@@ -5,8 +5,12 @@ layout: default
 <article>
   <div>
     <h1>{{ page.title }}</h1>
+    <p>
     <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
-      Last updated on {{ page.last_modified_at | date: "%B %-d, %Y" }}
+      {{ page.last_modified_at | date: "%B %-d, %Y" }}
+       ·
+        {{ note.content | reading_time }} read
+      </p>
       {% endif %}
     </time>
   </div>
@@ -15,6 +19,7 @@ layout: default
     <content>
       {{ content }}
       <p></p>
+      <hr>
     </content>
 
     <side style="font-size: 0.9em">
@@ -39,5 +44,3 @@ layout: default
     </side>
   </div>
 </article>
-
-<hr>
