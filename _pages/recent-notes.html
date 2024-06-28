@@ -7,13 +7,16 @@ permalink: /recently
 <strong>Recently updated from <a class="list-link" href="https://blog.envious.pro" target="_blank">blog</a></strong>
 
 <ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at" | reverse %}
+  {% assign recent_notes = site.notes | sort: "date" | reverse %}
   {% for note in recent_notes limit: 5 %}
     <li>
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
       <br>
       <p>
-        {{ note.last_modified_at | date: "%B %d, %Y" }} ·
+        {% assign day = note.date | date: "%-d" %}
+        {% assign month = note.date | date: "%B" %}
+        {% assign year = note.date | date: "%Y" %}
+        <span data-date>{{ month }}&#8203; {{ day }}&#8203;, {{ year }}</span> ·
         {{ note.content | reading_time }} read
       </p>
       {% assign words_limit = 14 %}

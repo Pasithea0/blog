@@ -13,13 +13,16 @@ This is where I share my thoughts, ideas, and updates on my projects.
 <strong>Recent</strong>
 
 <ul>
-  {% assign recent_notes = site.notes | sort: "last_modified_at" | reverse %}
+  {% assign recent_notes = site.notes | sort: "date" | reverse %}
   {% for note in recent_notes limit: 5 %}
     <li>
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
       <br>
       <p>
-        <span data-date>{{ note.last_modified_at | date: "%B&#8203; %d, %Y" }}</span> ·
+        {% assign day = note.date | date: "%-d" %}
+        {% assign month = note.date | date: "%B" %}
+        {% assign year = note.date | date: "%Y" %}
+        <span data-date>{{ month }}&#8203; {{ day }}&#8203;, {{ year }}</span> ·
         {{ note.content | reading_time }} read
       </p>
       {% assign words_limit = 14 %}
