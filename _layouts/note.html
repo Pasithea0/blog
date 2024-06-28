@@ -6,14 +6,16 @@ layout: default
   <div>
     <h1>{{ page.title }}</h1>
     <p>
-    <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{% if page.type != 'pages' %}
-      {{ page.last_modified_at | date: "%B&#8203; %d, %Y" }}
-       ·
-        {{ note.content | reading_time }} read
-      </p>
-      {% endif %}
-    </time>
-  </div>
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {% assign day = page.date | date: "%-d" %}
+        {% assign month = page.date | date: "%B" %}
+        {% assign year = page.date | date: "%Y" %}
+        <span data-date>{{ month }}&#8203; {{ day }}&#8203;, {{ year }}</span>
+        ·
+        {{ page.content | reading_time }} read
+      </time>
+    </p>
+  </div>  
 
   <div id="notes-entry-container">
     <content>
