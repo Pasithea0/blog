@@ -19,7 +19,7 @@ This is where I share my thoughts, ideas, and updates on my projects.
       <a class="internal-link" href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a>
       <br>
       <p>
-        <span data-date>{{ note.last_modified_at | date: "%B %d, %Y" }}</span> ·
+        <span data-date>{{ note.last_modified_at | date: "%B&#8203; %d, %Y" }}</span> ·
         {{ note.content | reading_time }} read
       </p>
       {% assign words_limit = 14 %}
