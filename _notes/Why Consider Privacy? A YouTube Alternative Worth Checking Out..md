@@ -2,6 +2,8 @@
 title: Why Consider Privacy? A YouTube Alternative Worth Checking Out.
 date: July 8, 2024
 ---
+<img src=" {{ site.baseurl }} /assets/privacy/Privacy Pictures Sergey Zolkin.jpg"/>
+
 In today's digital age, privacy has become a growing concern. Nearly every company collects and stores information about us, creating a digital footprint often without our full awareness. This data-driven landscape has far-reaching implications for personal autonomy, security, and freedom.
 
 While companies use this data for targeted advertising, product development, and market research, the potential for misuse is significant. Data breaches, identity theft, and unauthorized sale of personal information are just a few risks consumers face.
@@ -24,16 +26,6 @@ This brings me to Invidious, a private, locally hosted proxy for YouTube. It str
 
 While YouTube remains popular, alternatives offer a way to enjoy content without sacrificing personal data or dealing with intrusive advertising. It's about finding a balance between convenience and privacy that works for you.
 
-If you're interested in trying a private YouTube alternative, you can check out my instance at https://invidious.envious.pro. It's a small step towards more control over your online experience.
+If you're interested in trying a private YouTube alternative, you can check out my instance at [https://invidious.envious.pro](https://invidious.envious.pro). It's a small step towards more control over your online experience.
 
-And if you're still looking for ways to control your data online, here is a collection of resources and websites that can guide your way:
-
-```cardlink
-url: https://github.com/mendel5/alternative-front-ends
-title: "GitHub - mendel5/alternative-front-ends: Overview of alternative open source front-ends for popular internet platforms (e.g. YouTube, Twitter, etc.)"
-description: "Overview of alternative open source front-ends for popular internet platforms (e.g. YouTube, Twitter, etc.) - mendel5/alternative-front-ends"
-host: github.com
-favicon: https://github.githubassets.com/favicons/favicon.svg
-image: https://opengraph.githubassets.com/dfd4463a63fae10cc428d22bb56bc73c358152d056863dd57d8eff7d39ce22f0/mendel5/alternative-front-ends
-```
-
+And if you're still looking for ways to control your data online, here is a collection of resources and websites that can guide your way: [https://github.com/mendel5/alternative-front-ends](https://github.com/mendel5/alternative-front-ends)
